@@ -1,0 +1,106 @@
+.photo {
+    align-self: center;
+    border-radius: 50%;
+    border-style: none;
+    height: 334px;
+    width: 334px;
+}
+
+.intro {
+    margin-top: 15px;
+    max-width: 350px;
+}
+
+.homeContainer {
+    margin-top: 15px;
+}
+
+// MOBILE
+@media screen AND (max-width: 479px) {
+    .homeContainer {
+        background-color: #fff;
+        border-radius: 15px;
+        border-style: none;
+        // margin-top: 0;
+        max-width: 353px !important;
+        padding: 15px !important;
+        width: 79%;
+        margin: 15px;
+    }
+    .salutation {
+        max-width: 175px;
+    }
+    .photo {
+        // border-radius: 50%;
+        // border-style: none;
+        height: 117px;
+        width: 117px;
+    }
+    .intro {
+        max-width: 350px;
+    }
+}
+
+// TABLET
+@media screen AND (min-width: 480px) AND (max-width: 767px) {
+    .homeContainer {
+        background-color: #fff;
+        border-radius: 15px;
+        border-style: none;
+        // margin-top: 15px;
+        // width: 58%;
+        width: 85% !important;
+        max-width: 650px !important;
+        padding: 35px 45px !important;
+        margin-top: 15px;
+    }
+    .intro {
+        max-width: 380px;
+    }
+    .photo {
+        // border-radius: 50%;
+        // border-style: none;
+        height: 225px;
+        width: 225px;
+    }
+    .salutation {
+        max-width: 175px;
+    }
+}
+
+// DESKTOP
+@media screen AND (min-width: 767px) AND (max-width: 1024px) {
+    .homeContainer {
+        background-color: #fff;
+        border-radius: 15px;
+        border-style: none;
+        // margin-top: 15px;
+        // width: 58%;
+        width: 85% !important;
+        max-width: 850px !important;
+        padding: 35px 0 !important;
+    }
+    .intro {
+        max-width: 380px;
+    }
+    .photo {
+        // border-radius: 50%;
+        // border-style: none;
+        height: 225px;
+        width: 225px;
+    }
+}
+
+// WIDE
+@media screen AND (min-width: 1025px) {
+    .homeContainer {
+        background-color: #fff;
+        border-radius: 15px;
+        border-style: none;
+        // margin-top: 15px;
+        // width: 58%;
+        width: 85%;
+        max-width: 1015px !important;
+        padding: 55px 65px !important;
+    }
+}
