@@ -83,15 +83,15 @@ const Home: React.FC = () => {
                     </Box>
                     <Box id='desktopIntro' className={styles.intro}>
                         <Typography variant='body1'>
-                            I’m Andie, but most people just call me loud. I am of Venezuelan descent, speak three languages, and I only answer to Mother Nature (...and mom). 
+                            I’m Andrea, but most people just call me Andie. I am of Venezuelan descent, speak three languages, and I love to use my language skills with others when given the opportunity. 
                         </Typography>
                         <br />
                         <Typography variant='body1'>
-                            I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects, abandoning them and banishing supplies to the Graveyard of Abandoned Projects (closet), and rifling through to resurrect them months later when I want to run it back.
+                            I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects and driving the entirety of the software development lifecycle from design to deployment.
                         </Typography>
                         <br />
                         <Typography variant='body1'>
-                            I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy.
+                            I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy!
                         </Typography>
                     </Box>
                 </Grid>
