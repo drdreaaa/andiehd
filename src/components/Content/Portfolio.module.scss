@@ -52,9 +52,16 @@
     margin: 4;
 }
 
+.largePhotoModal {
+    max-width: 650;
+    max-height: 650;
+    overflow: auto;
+    
+}
+
 // MOBILE
 @media screen AND (max-width: 479px) {
-    .homeContainer {
+    .portfolioContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
@@ -64,23 +71,26 @@
         width: 79%;
         margin: 15px;
     }
-    .salutation {
-        max-width: 175px;
-    }
-    // .photo {
-    //     // border-radius: 50%;
-    //     // border-style: none;
-    //     height: 117px;
-    //     width: 117px;
-    // }
-    .intro {
-        max-width: 350px;
+
+    .largePhotoBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 5px solid #F697E0;
+        border-radius: 10px;
+        box-shadow: 24;
+        padding: 4;
+        max-width: 400;
+        max-height: 400;
+        margin: 4;
     }
 }
 
 // TABLET
 @media screen AND (min-width: 480px) AND (max-width: 767px) {
-    .homeContainer {
+    .portfolioContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
@@ -90,23 +100,11 @@
         max-width: 650px !important;
         padding: 35px 45px !important;
     }
-    .intro {
-        max-width: 380px;
-    }
-    // .photo {
-    //     // border-radius: 50%;
-    //     // border-style: none;
-    //     height: 225px;
-    //     width: 225px;
-    // }
-    .salutation {
-        max-width: 175px;
-    }
 }
 
 // DESKTOP
 @media screen AND (min-width: 767px) AND (max-width: 1024px) {
-    .homeContainer {
+    .portfolioContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
@@ -116,20 +114,11 @@
         max-width: 850px !important;
         padding: 35px 0 !important;
     }
-    .intro {
-        max-width: 380px;
-    }
-    // .photo {
-    //     // border-radius: 50%;
-    //     // border-style: none;
-    //     height: 225px;
-    //     width: 225px;
-    // }
 }
 
 // WIDE
 @media screen AND (min-width: 1025px) {
-    .homeContainer {
+    .portfolioContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;

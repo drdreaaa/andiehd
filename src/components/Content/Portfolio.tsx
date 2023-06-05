@@ -143,9 +143,9 @@ const Portfolio: React.FC = () => {
 
     return (
         <>
-            <Container id='portfolioContainer' sx={{padding: '0 !important', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <Container id='portfolioContainer' sx={{ padding: '15px !important', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
                 {portfolioItems.map((item) => (
-                    <Container key={item.title} sx={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', backgroundColor: '#fff', margin: '25px 15px', padding: '0 !important', borderStyle: 'none', borderRadius: '15px' }}>
+                    <Container id={`${item.title} Container`} key={item.title} sx={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', backgroundColor: '#fff', margin: '15px 0 !important', padding: '0 !important', borderStyle: 'none', borderRadius: '15px', width: '100%' }}>
                         <Box
                             sx={{
                                 backgroundColor: '#F697E0',
@@ -190,6 +190,7 @@ const Portfolio: React.FC = () => {
             </Container>
             {open && (
                 <Modal id='bigPhotoModal'
+                    // className={styles.largePhotoModal}
                     open={open}
                     onClose={handleClose}
                     aria-labelledby="modal-modal-title"

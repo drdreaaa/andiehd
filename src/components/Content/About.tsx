@@ -9,6 +9,10 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 
+// Styles
+import styles from './About.module.scss';
+import Box from '@mui/system/Box';
+
 const aboutMeInfo = [
     {
         name: 'life philosophy',
@@ -87,20 +91,22 @@ const aboutMeInfo = [
 const About: React.FC = () => {
 
     return (
-        <Container sx={{marginTop: '15px', maxWidth: '650px'}}>
-            <Grid container spacing={2} sx={{justifyContent: 'center', margin: '0 !important'}}>
+        <Container id='aboutContainer' className={styles.aboutContainer}>
+            <Grid container spacing={2} sx={{justifyContent: 'center', margin: '0 !important', width: '100%'}}>
                 {aboutMeInfo.map((section) => (
                     <Grid item sx={{
                         backgroundColor: '#fff',
                         borderStyle: 'none',
                         borderRadius: '15px',
                         margin: '15px !important',
+                        minWidth: '350px',
                         width: '450px',
                         maxWidth: '485px',
-                        padding: '15px',
+                        padding: '55px !important',
                     }}>
-                        <Card key={section.name} sx={{boxShadow: 'none', padding: '15px'}}>
-                            <CardContent>
+                        {/* <Card key={section.name} sx={{boxShadow: 'none', padding: '15px'}}>
+                            <CardContent> */}
+                            <Box id={`${section.name}-Box`}>
                                 <Typography variant='h3'>{section.name}</Typography>
                                 <List>
                                     {section.items.map(item => (
@@ -111,8 +117,9 @@ const About: React.FC = () => {
                                         </ListItem>
                                     ))}
                                 </List>
-                            </CardContent>
-                        </Card>
+                            </Box>
+                            {/* </CardContent>
+                        </Card> */}
                     </Grid>
                 ))}
             </Grid>
