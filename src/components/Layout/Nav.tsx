@@ -13,14 +13,13 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({page, onPageChange}) => {
 
     const handleNav = (page: any) => {
-		console.log(page);
+		console.log(page); // TODO: remove
         onPageChange(page);
 	}
 
     return (
         <Container
             sx={{
-                // margin: '15px 0',
                 padding: '15px'
             }}
         >
@@ -31,25 +30,25 @@ const Nav: React.FC<NavProps> = ({page, onPageChange}) => {
                     gap: '15px',
                 }}
             >
-                <Button
+                <Button variant='text'
                     onClick={() => handleNav('home')}
                 >
-                    <Typography variant='button'>HOME</Typography>
+                    <Typography>HOME</Typography>
                 </Button>
-                <Button
+                <Button variant='text'
                     onClick={() => handleNav('portfolio')}
                 >
-                    <Typography variant='button'>PORTFOLIO</Typography>
+                    <Typography>PORTFOLIO</Typography>
                 </Button>
-                <Button
+                <Button variant='text'
                     onClick={() => handleNav('about')}
                 >
-                    <Typography variant='button'>ABOUT ME</Typography>
+                    <Typography>ABOUT ME</Typography>
                 </Button>
-                <Button
+                <Button variant='text'
                     onClick={() => handleNav('contact')}
                 >
-                    <Typography variant='button'>CONTACT</Typography>
+                    <Typography>CONTACT</Typography>
                 </Button>
             </Box>
         </Container>

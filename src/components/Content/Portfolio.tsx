@@ -12,8 +12,63 @@ import Typography from '@mui/material/Typography';
 // Styles
 import styles from './Portfolio.module.scss';
 
-
-const portfolioItems = [
+const personalPortfolio = [
+    {
+        title: 'recipe disco',
+        caption: '*designs by me',
+        description: 'Social recipe app to challenge friends, enable creativity and experimenting, and  set goals to cook more often.',
+        items: [
+            {
+                brief: 'Implemented UI as defined by Product for the Electronic Statement Delivery Service.',
+                imgSrc: '/images/workshots/esd_main.png'
+            },
+            {
+                brief: 'PLACEHOLDER FOR DOWNLOAD GIF',
+                imgSrc: '/images/workshots/esd_main.png'
+            },
+            {
+                brief: 'Implemented POC user menu for ESD.',
+                imgSrc: '/images/workshots/esd_usermenu.png'
+            },
+            {
+                brief: 'PLACEHOLDER FOR REPORT BUG',
+                imgSrc: '/images/workshots/esd_main.png'
+            },
+            {
+                brief: 'PLACEHOLDER FOR SUBMIT FEEDBACK',
+                imgSrc: '/images/workshots/esd_main.png'
+            },
+            {
+                brief: 'Implemented microservice to collect emails to register for ESD.',
+                imgSrc: '/images/workshots/esd_email_collection.png'
+            },
+            {
+                brief: 'Landing page for successful email registration.',
+                imgSrc: '/images/workshots/esd_ec_success.png'
+            }
+        ]
+    },
+    {
+        title: 'sample messaging app',
+        caption: '*designs by me',
+        description: 'Sample messaging app to showcase design and front-end development skills.',
+        items: [
+            {
+                brief: 'Implemented UI as defined by Product for the Electronic Statement Delivery Service.',
+                imgSrc: '/images/workshots/esd_main.png'
+            },
+            {
+                brief: 'PLACEHOLDER FOR DOWNLOAD GIF',
+                imgSrc: '/images/workshots/esd_main.png'
+            },
+            {
+                brief: 'Implemented POC user menu for ESD.',
+                imgSrc: '/images/workshots/esd_usermenu.png'
+            }
+        ]
+    },
+]
+const workPortfolio = [
     {
         title: 'electronic statement delivery service',
         caption: '*designs by product team',
@@ -144,7 +199,8 @@ const Portfolio: React.FC = () => {
     return (
         <>
             <Container id='portfolioContainer' sx={{ padding: '15px !important', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
-                {portfolioItems.map((item) => (
+                <Typography variant='h4'>professional work</Typography>
+                {workPortfolio.map((item) => (
                     <Container id={`${item.title} Container`} key={item.title} sx={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', backgroundColor: '#fff', margin: '15px 0 !important', padding: '0 !important', borderStyle: 'none', borderRadius: '15px', width: '100%' }}>
                         <Box
                             sx={{

@@ -7,10 +7,10 @@ import Header from './components/Layout/Header/Header';
 
 function App() {
 
-    const theme = createTheme({
-		// palette: {
-
-		// },
+  const theme = createTheme({
+    // palette: {
+      
+    // },
 		typography: {
       h3: {
           fontFamily: "'Inter', sans-serif",
@@ -56,6 +56,15 @@ function App() {
         xl: 1536,
       },
     },
+    components: {
+      MuiButton: {
+        styleOverrides: {
+          textPrimary: {
+            color: '#000',
+          },
+        }
+      }
+    }
 	});
   
   return (
