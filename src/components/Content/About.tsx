@@ -88,14 +88,14 @@ const About: React.FC = () => {
 
     return (
         <Container sx={{marginTop: '15px', maxWidth: '650px'}}>
-            <Grid container spacing={2} sx={{justifyContent: 'center'}}>
+            <Grid container spacing={2} sx={{justifyContent: 'center', margin: '0 !important'}}>
                 {aboutMeInfo.map((section) => (
                     <Grid item sx={{
                         backgroundColor: '#fff',
                         borderStyle: 'none',
                         borderRadius: '15px',
-                        margin: '15px',
-                        width: '485px',
+                        margin: '15px !important',
+                        width: '450px',
                         maxWidth: '485px',
                         padding: '15px',
                     }}>
