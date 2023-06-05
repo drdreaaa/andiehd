@@ -143,14 +143,14 @@ const Portfolio: React.FC = () => {
 
     return (
         <>
-            <Container id='portfolioContainer'>
+            <Container id='portfolioContainer' sx={{padding: '0 !important', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                 {portfolioItems.map((item) => (
-                    <Container key={item.title} sx={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', backgroundColor: '#fff', margin: '25px 15px', padding: '35px', borderStyle: 'none', borderRadius: '15px' }}>
+                    <Container key={item.title} sx={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', backgroundColor: '#fff', margin: '25px 15px', padding: '0 !important', borderStyle: 'none', borderRadius: '15px' }}>
                         <Box
                             sx={{
                                 backgroundColor: '#F697E0',
                                 borderStyle: 'none',
-                                borderRadius: '15px 1px',
+                                borderRadius: '15px 15px 0 0',
                                 color: '#fff',
                                 margin: '0',
                                 padding: '8px 13px'
