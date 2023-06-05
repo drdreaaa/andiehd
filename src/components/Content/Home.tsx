@@ -26,7 +26,7 @@ const Home: React.FC = () => {
                 </Grid>
                 <Grid item sx={{alignSelf: 'center'}}>
                     <Box>
-                        <img id='photo' className={styles.photo} src='/images/me_temp.png' alt='tempPhoto' />
+                        <img id='photo' className={styles.photo} src='/images/headshot.JPG' alt='tempPhoto' />
                     </Box>
                 </Grid>
                 <Grid item>
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
                 </Grid>
                 <Grid item sx={{alignSelf: 'center'}}>
                     <Box>
-                        <img id='photo' className={styles.photo} src='/images/me_temp.png' alt='tempPhoto' />
+                        <img id='photo' className={styles.photo} src='/images/headshot.JPG' alt='tempPhoto' />
                     </Box>
                 </Grid>
                 <Grid item>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
                 </Grid>
                 <Grid item sx={{alignSelf: 'center'}}>
                     <Box>
-                        <img id='photo' className={styles.photo} src='/images/me_temp.png' alt='tempPhoto' />
+                        <img id='photo' className={styles.photo} src='/images/headshot.JPG' alt='tempPhoto' />
                     </Box>
                 </Grid>
             </Grid>
