@@ -86,11 +86,11 @@ const Home: React.FC = () => {
                 </Typography>
                 <br />
                 <Typography variant='body1'>
-                    Soy ingeniera de interfaz por día, y juguetedora por noche. Destaco en híper-concentrándome en proyectos, sea técnico o no, y proponiendo soluciones creativos a problemas complejos. Tengo orgullo de ser compañera responsable y animada, y me disfruto en los éxitos de mis amigos y compañeros.
+                    Soy ingeniera de interfaz por día, y jugueteora por noche. Destaco en híper-concentrándome en proyectos, sea técnico o no, y proponiendo soluciones creativos a problemas complejos. Tengo orgullo de ser compañera responsable y animada, y me disfruto en los éxitos de mis amigos y compañeros.
                 </Typography>
                 <br />
                 <Typography variant='body1'>
-                    Tengo passion por aprender habilidades nuevos (por eso el jugueteando), observar comportamientos y interacciones, y comer caramelitos y zanahorias (el equilibrio es clave). 
+                    Tengo passion por aprender habilidades nuevos (por eso jugueteo), observar comportamientos y interacciones, y comer caramelitos y zanahorias (el equilibrio es clave). 
                 </Typography>
             </React.Fragment>
         )
