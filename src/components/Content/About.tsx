@@ -1,8 +1,7 @@
 import React from 'react';
 
 // Material
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import Box from '@mui/system/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
@@ -11,7 +10,6 @@ import Typography from '@mui/material/Typography';
 
 // Styles
 import styles from './About.module.scss';
-import Box from '@mui/system/Box';
 
 const aboutMeInfo = [
     {
@@ -91,7 +89,7 @@ const aboutMeInfo = [
 const About: React.FC = () => {
 
     return (
-        <Container id='aboutContainer' className={styles.aboutContainer}>
+        <Container id='aboutContainer' >
             <Grid container spacing={2} sx={{justifyContent: 'center', margin: '0 !important', width: '100%'}}>
                 {aboutMeInfo.map((section) => (
                     <Grid item sx={{

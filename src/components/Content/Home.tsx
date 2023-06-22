@@ -82,15 +82,15 @@ const Home: React.FC = () => {
         return (
             <React.Fragment>
                 <Typography variant='body1'>
-                    Me llamo Andrea, pero la mayoría de la gente me llaman Andie (en ingles... Andrea me suena bonito en español). Soy venezolana, hablo tres lenguas, y me encanta usar mis habilidades lingüísticas con los demás cuando tengo l’opportunidad. (Haz clic en los botones por encima para cambiar la lengua.)
+                    Me llamo Andrea, pero la mayoría de la gente me llama Andie en ingles (Andrea me suena bonito en español). Soy venezolana, hablo tres idiomas, y me encanta usar mis habilidades lingüísticas con los demás cuando tengo la oportunidad. (Haz clic en los botones arriba para cambiar a tu idioma preferido).
                 </Typography>
                 <br />
                 <Typography variant='body1'>
-                    Soy ingeniera de interfaz por día, y jugueteora por noche. Destaco en híper-concentrándome en proyectos, sea técnico o no, y proponiendo soluciones creativos a problemas complejos. Tengo orgullo de ser compañera responsable y animada, y me disfruto en los éxitos de mis amigos y compañeros.
+                    Practico la ingenieria de computacion durante el dia laboral, y me encanta dedicar tiempo a mis proyectos personales (como este website) despues del horario de trabajo.  Una de las cualidades que me destacan es mi hiper-concentracion en los proyectos a los que me dedico, sean proyectos tecnicos o no tecnicos.  Tambien me destaco por mi capacidad de pensar critica y creativamente para encontrar soluciones a problemas complejos.  Me siento tambien orgullosa de ser una buena y leal colaboradora con mis compañeros de equipo y me da muchisima alegria celebrar los exitos de mis amigos y colegas.
                 </Typography>
                 <br />
                 <Typography variant='body1'>
-                    Tengo passion por aprender habilidades nuevos (por eso jugueteo), observar comportamientos y interacciones, y comer caramelitos y zanahorias (el equilibrio es clave). 
+                Tengo pasion por aprender cosas nuevas (de ahi viene mi aficion a proyectos personales despues del trabajo), observar comportamientos e interacciones, y comer caramelitos y zanahorias (el equilibrio es clave).
                 </Typography>
             </React.Fragment>
         )
@@ -127,12 +127,6 @@ const Home: React.FC = () => {
                 <Grid id='mobileGrid' container spacing='2' sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'center', verticalAlign: 'middle' }}>
                     <Grid item sx={{alignSelf: 'center'}}>
                         {displaySalutation()}
-                        {/* {language === 'en' && (<EnglishSalutation />)}
-                        {language === 'fr' && (<FrenchSalutation />)}
-                        {language === 'es' && (<SpanishSalutation />)} */}
-                        {/* <Box>
-                            <Typography variant='h4' className={styles.salutation}>hey there, friend!</Typography>
-                        </Box> */}
                     </Grid>
                     <Grid item sx={{alignSelf: 'center'}}>
                         <Box>
@@ -142,17 +136,6 @@ const Home: React.FC = () => {
                     <Grid item>
                         <Box id='mobileIntro' className={styles.intro}>
                             {displayIntro()}
-                            {/* <Typography variant='body1'>
-                                I’m Andrea, but most people just call me Andie. I am of Venezuelan descent, speak three languages, and I love to use my language skills with others when given the opportunity. 
-                            </Typography>
-                            <br />
-                            <Typography variant='body1'>
-                                I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects and driving the entirety of the software development lifecycle from design to deployment.
-                            </Typography>
-                            <br />
-                            <Typography variant='body1'>
-                                I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy.
-                            </Typography> */}
                         </Box>
                     </Grid>
                 </Grid>
@@ -161,22 +144,8 @@ const Home: React.FC = () => {
                 <Grid id='tabletGrid' container spacing='5' sx={{ display: { xs: 'none', md: 'flex', lg: 'none' }, justifyContent: 'center' }}>
                     <Grid item>
                         {displaySalutation()}
-                        {/* <Box>
-                            <Typography variant='h4'>hey there, friend!</Typography>
-                        </Box> */}
                         <Box id='tabletIntro' className={styles.intro}>
                             {displayIntro()}
-                            {/* <Typography variant='body1'>
-                                I’m Andrea, but most people just call me Andie. I am of Venezuelan descent, speak three languages, and I love to use my language skills with others when given the opportunity. 
-                            </Typography>
-                            <br />
-                            <Typography variant='body1'>
-                                I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects and driving the entirety of the software development lifecycle from design to deployment.
-                            </Typography>
-                            <br />
-                            <Typography variant='body1'>
-                                I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy!
-                            </Typography> */}
                         </Box>
                     </Grid>
                     <Grid item sx={{alignSelf: 'center'}}>
@@ -192,22 +161,8 @@ const Home: React.FC = () => {
                 <Grid id='desktopGrid' container spacing='2' sx={{ display: { xs: 'none', md: 'none', lg: 'flex' }, justifyContent: 'center' }}>
                     <Grid item>
                         {displaySalutation()}
-                        {/* <Box>
-                            <Typography variant='h4'>hey there, friend!</Typography>
-                        </Box> */}
                         <Box id='desktopIntro' className={styles.intro}>
                             {displayIntro()}
-                            {/* <Typography variant='body1'>
-                                I’m Andrea, but most people just call me Andie. I am of Venezuelan descent, speak three languages, and I love to use my language skills with others when given the opportunity. 
-                            </Typography>
-                            <br />
-                            <Typography variant='body1'>
-                                I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects and driving the entirety of the software development lifecycle from design to deployment.
-                            </Typography>
-                            <br />
-                            <Typography variant='body1'>
-                                I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy!
-                            </Typography> */}
                         </Box>
                     </Grid>
                     <Grid item sx={{alignSelf: 'center'}}>
