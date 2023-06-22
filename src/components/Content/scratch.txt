@@ -1,0 +1,598 @@
+            <Grid container spacing={2} sx={{justifyContent: 'center'}}>
+                {/* {projects.map(project => (
+                    <Card key={project}
+                        sx={{
+                            backgroundColor: '#fff',
+                            borderStyle: 'none',
+                            borderRadius: '15px',
+                            margin: '15px',
+                            maxWidth: '390px',
+                            padding: '15px',
+                        }}
+                    >
+                        <CardHeader
+                            action={
+                                <IconButton aria-label="settings">
+                                    <MoreVert />
+                                </IconButton>
+                            }
+                            title={
+                                <Typography variant='h4'
+                                    sx={{
+                                        backgroundColor: '#F697E0',
+                                        borderStyle: 'none',
+                                        borderRadius: '15px 1px',
+                                        color: '#fff',
+                                        margin: '0',
+                                        padding: '8px 13px'
+                                    }}
+                                >
+                                    {project}
+                                    </Typography>
+                            }
+                            sx={{
+                                margin: '0',
+                                padding: '0'
+                            }}
+                        />
+                        <CardContent>
+                            <Box sx={{maxWidth: '350px'}}>
+                                <img className={styles.photo} src='/images/workshots/vouchers_bulk.png' alt='vouchers bulk' />
+                            </Box>
+                            <Typography variant="body2" color="text.secondary">
+                                This impressive paella is a perfect party dish and a fun meal to cook
+                                together with your guests. Add 1 cup of frozen peas along with the mussels,
+                                if you like.
+                            </Typography>
+                        </CardContent>
+                        <CardActions disableSpacing>
+                            <IconButton aria-label="add to favorites">
+                                <Favorite />
+                            </IconButton>
+                            <IconButton aria-label="share">
+                                <Share />
+                            </IconButton>
+                            <ExpandMorePanel
+                                expand={expanded}
+                                onClick={handleExpandClick}
+                                aria-expanded={expanded}
+                                aria-label="show more"
+                            >
+                                <ExpandMore />
+                            </ExpandMorePanel>
+                        </CardActions>                
+                    </Card>
+                ))} */}
+            </Grid>
+
+
+
+                    {/* <CardHeader
+                        action={
+                            <IconButton aria-label="settings">
+                                <MoreVert />
+                            </IconButton>
+                        }
+                        title={
+                            <Typography variant='h4'
+                                sx={{
+                                    backgroundColor: '#F697E0',
+                                    borderStyle: 'none',
+                                    borderRadius: '15px 1px',
+                                    color: '#fff',
+                                    margin: '0',
+                                    padding: '8px 13px'
+                                }}
+                            >
+                                {item.title}
+                                </Typography>
+                        }
+                        sx={{
+                            margin: '0',
+                            padding: '0',
+                            // position: 'absolute',
+
+                        }}
+                    /> */}
+
+
+
+                    <Card key={item.title}
+                    sx={{
+                        backgroundColor: '#fff',
+                        borderStyle: 'none',
+                        borderRadius: '15px',
+                        margin: '15px',
+                        // maxWidth: '390px',
+                        padding: '15px',
+                        maxHeight: '350px',
+                        overflow: 'auto',
+                        // display: 'flex',
+                        // flexDirection: 'row',
+                    }}
+                >
+                <CardContent>
+                    <Container  sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                }}>
+                        {item.items.map((work) => (
+                            <Container>
+                                <Box>
+                                    <img className={styles.photo} src={work.imgSrc} alt={work.brief} />
+                                </Box>
+                                <Typography variant="body2" color="text.secondary">
+                                    {work.brief}
+                                </Typography>
+                            </Container>
+                        ) )}
+                    </Container>
+
+                </CardContent>
+                <CardActions disableSpacing>
+                    <ExpandMorePanel
+                        expand={expanded}
+                        onClick={handleExpandClick}
+                        aria-expanded={expanded}
+                        aria-label="show more"
+                    >
+                        <ExpandMore />
+                    </ExpandMorePanel>
+                </CardActions>                
+            </Card>
+
+
+<CardActions disableSpacing>
+                                    <ExpandMorePanel
+                                        expand={expanded}
+                                        onClick={handleExpandClick}
+                                        aria-expanded={expanded}
+                                        aria-label="show more"
+                                    >
+                                        <ExpandMore />
+                                    </ExpandMorePanel>
+                                </CardActions>
+                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                    <Typography paragraph>Method:</Typography>
+                                    <Typography paragraph>
+                                        Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
+                                        aside for 10 minutes.
+                                    </Typography>
+                                    <Typography paragraph>
+                                        Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
+                                        medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
+                                        occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
+                                        large plate and set aside, leaving chicken and chorizo in the pan. Add
+                                        pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
+                                        stirring often until thickened and fragrant, about 10 minutes. Add
+                                        saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+                                    </Typography>
+                                    <Typography paragraph>
+                                        Add rice and stir very gently to distribute. Top with artichokes and
+                                        peppers, and cook without stirring, until most of the liquid is absorbed,
+                                        15 to 18 minutes. Reduce heat to medium-low, add reserved shrimp and
+                                        mussels, tucking them down into the rice, and cook again without
+                                        stirring, until mussels have opened and rice is just tender, 5 to 7
+                                        minutes more. (Discard any mussels that don&apos;t open.)
+                                    </Typography>
+                                    <Typography>
+                                        Set aside off of the heat to let rest for 10 minutes, and then serve.
+                                    </Typography>
+                                    </CardContent>
+                                </Collapse> 
+
+
+// interface ExpandMoreProps extends IconButtonProps {
+//     expand: boolean;
+// }
+
+// const ExpandMorePanel = styled((props: ExpandMoreProps) => {
+//     const { expand, ...other } = props;
+//     return <IconButton {...other} />;
+//     })(({ theme, expand }) => ({
+//     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+//     marginLeft: 'auto',
+//     transition: theme.transitions.create('transform', {
+//         duration: theme.transitions.duration.shortest,
+//     }),
+// })); 
+
+
+/*
+<Container id='gridContainer'>
+<Grid container spacing={2} sx={{justifyContent: 'center'}}>
+    {portfolioItems.map((item) => (
+        <Container key={item.title}>
+            <Container id={`sectionHeader-${item.title}`}>
+                <Typography variant='h4'
+                    sx={{
+                        backgroundColor: '#F697E0',
+                        borderStyle: 'none',
+                        borderRadius: '15px 1px',
+                        color: '#fff',
+                        margin: '0',
+                        padding: '8px 13px'
+                    }}
+                >
+                {item.title}
+                </Typography>
+            </Container>
+            <Card key={item.title}
+            sx={{
+                backgroundColor: '#fff',
+                borderStyle: 'none',
+                borderRadius: '15px',
+                margin: '15px',
+                // maxWidth: '390px',
+                padding: '15px',
+                maxHeight: '350px',
+                overflow: 'auto',
+                // display: 'flex',
+                // flexDirection: 'row',
+            }}
+        >
+            {/* <CardHeader
+                action={
+                    <IconButton aria-label="settings">
+                        <MoreVert />
+                    </IconButton>
+                }
+                title={
+                    <Typography variant='h4'
+                        sx={{
+                            backgroundColor: '#F697E0',
+                            borderStyle: 'none',
+                            borderRadius: '15px 1px',
+                            color: '#fff',
+                            margin: '0',
+                            padding: '8px 13px'
+                        }}
+                    >
+                        {item.title}
+                        </Typography>
+                }
+                sx={{
+                    margin: '0',
+                    padding: '0',
+                    // position: 'absolute',
+
+                }}
+            /> }
+            <CardContent>
+                <Container  sx={{
+                display: 'flex',
+                flexDirection: 'row',
+            }}>
+                    {item.items.map((work) => (
+                        <Container>
+                            <Box>
+                                <img className={styles.photo} src={work.imgSrc} alt={work.brief} />
+                            </Box>
+                            <Typography variant="body2" color="text.secondary">
+                                {work.brief}
+                            </Typography>
+                        </Container>
+                    ) )}
+                </Container>
+
+            </CardContent>
+            <CardActions disableSpacing>
+                <ExpandMorePanel
+                    expand={expanded}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
+                >
+                    <ExpandMore />
+                </ExpandMorePanel>
+            </CardActions>                
+        </Card>
+        </Container>
+    ))}
+    { {projects.map(project => (
+        <Card key={project}
+            sx={{
+                backgroundColor: '#fff',
+                borderStyle: 'none',
+                borderRadius: '15px',
+                margin: '15px',
+                maxWidth: '390px',
+                padding: '15px',
+            }}
+        >
+            <CardHeader
+                action={
+                    <IconButton aria-label="settings">
+                        <MoreVert />
+                    </IconButton>
+                }
+                title={
+                    <Typography variant='h4'
+                        sx={{
+                            backgroundColor: '#F697E0',
+                            borderStyle: 'none',
+                            borderRadius: '15px 1px',
+                            color: '#fff',
+                            margin: '0',
+                            padding: '8px 13px'
+                        }}
+                    >
+                        {project}
+                        </Typography>
+                }
+                sx={{
+                    margin: '0',
+                    padding: '0'
+                }}
+            />
+            <CardContent>
+                <Box sx={{maxWidth: '350px'}}>
+                    <img className={styles.photo} src='/images/workshots/vouchers_bulk.png' alt='vouchers bulk' />
+                </Box>
+                <Typography variant="body2" color="text.secondary">
+                    This impressive paella is a perfect party dish and a fun meal to cook
+                    together with your guests. Add 1 cup of frozen peas along with the mussels,
+                    if you like.
+                </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+                <IconButton aria-label="add to favorites">
+                    <Favorite />
+                </IconButton>
+                <IconButton aria-label="share">
+                    <Share />
+                </IconButton>
+                <ExpandMorePanel
+                    expand={expanded}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
+                >
+                    <ExpandMore />
+                </ExpandMorePanel>
+            </CardActions>                
+        </Card>
+    ))} }
+</Grid>
+</Container>
+*/
+
+// lifePhilosophy: any,
+// interests: any,
+// skills: any,
+// opinions: any,
+// likes: any,
+// dislikes: any
+// interface AboutMeInfoSections {
+//     lifePhilosophy: {
+//         name: string;
+//         items: string[];
+//     },
+//     interests: {
+//         name: string;
+//         items: string[];
+//     },
+//     skills: {
+//         name: string;
+//         items: string[];
+//     },
+//     opinions: {
+//         name: string;
+//         items: string[];
+//     },
+//     likes: {
+//         name: string;
+//         items: string[];
+//     },
+//     dislikes: {
+//         name: string;
+//         items: string[];
+//     },
+// }
+
+// const aboutMeInfo: AboutMeInfoSections = {
+//     lifePhilosophy: {
+//         name: 'life philosophy',
+//         items: [
+//             'Live and let live.',
+//             'Keep it simple.',
+//             'Less is more',
+//             'Make people smile.',
+//             'Know your worth.',
+//             'Choose happy.',
+//             'Return shopping carts.'
+//         ]
+//     },
+//     interests: {
+//         name: 'interests and hobbies',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     },
+//     skills: {
+//         name: 'skills',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     },
+//     opinions: {
+//         name: 'opinions',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     },
+//     likes: {
+//         name: 'likes',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     },
+//     dislikes: {
+//         name: 'dislikes',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     }
+// }
+
+// const aboutMeInfo2 = [
+//     {lifePhilosophy: {
+//         name: 'life philosophy',
+//         items: [
+//             'Live and let live.',
+//             'Keep it simple.',
+//             'Less is more',
+//             'Make people smile.',
+//             'Know your worth.',
+//             'Choose happy.',
+//             'Return shopping carts.'
+//         ]
+//     }},
+//     {interests: {
+//         name: 'interests and hobbies',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     }},
+//     {skills: {
+//         name: 'skills',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     }},
+//     {opinions: {
+//         name: 'opinions',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     }},
+//     {likes: {
+//         name: 'likes',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     }},
+//     {dislikes: {
+//         name: 'dislikes',
+//         items: [
+//             'Arts and crafts.',
+//             'New technologies (sup, ChatGPT).',
+//             'Baking.',
+//             'Sports and gaming.',
+//             'Current events.',
+//             'Gamification.',
+//             'Stand up comedy.'
+//         ]
+//     }}
+// ]
+
+
+
+
+// sx={{
+//     backgroundColor: '#fff',
+//     borderStyle: 'hidden',
+//     borderRadius: '15px',
+//     marginTop: '15px',
+//     minWidth: '90%',
+//     width: '75%',
+
+//     padding: '55px'
+// }}
+
+/* <Container
+    id='homeContainer'
+    className={styles.homeContainer}
+>
+    <Box>
+        <Typography variant='h4'>hey there, friend!</Typography>
+    </Box>
+
+    <Box>
+        image goes here
+    </Box>
+
+    <Box sx={{ maxWidth: '350px',}}>
+        <Typography variant='body1'>
+            I’m Andie, but most people just call me loud. I am of Venezuelan descent, speak three languages, and I only answer to Mother Nature (...and mom). 
+        </Typography>
+        <Typography variant='body1'>
+            I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects, abandoning them and banishing supplies to the Graveyard of Abandoned Projects (closet), and rifling through to resurrect them months later when I want to run it back.
+        </Typography>
+        <Typography variant='body1'>
+            I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy.
+        </Typography>
+    </Box>
+</Container> */
+        
+
+/* <Box>
+image goes here
+</Box>
+
+<Box sx={{ maxWidth: '350px',}}>
+<Typography variant='body1'>
+    I’m Andie, but most people just call me loud. I am of Venezuelan descent, speak three languages, and I only answer to Mother Nature (...and mom). 
+</Typography>
+<Typography variant='body1'>
+    I’m a front-end software engineer by day, and a tinkerer by night. I excel in hyper-focusing on projects, abandoning them and banishing supplies to the Graveyard of Abandoned Projects (closet), and rifling through to resurrect them months later when I want to run it back.
+</Typography>
+<Typography variant='body1'>
+    I’m passionate about learning new skills (hence the above), observing behavior and interactions, and eating candy.
+</Typography>
+</Box> */

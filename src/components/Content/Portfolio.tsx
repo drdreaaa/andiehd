@@ -199,7 +199,7 @@ const Portfolio: React.FC = () => {
     return (
         <>
             <Container id='portfolioContainer' sx={{ padding: '15px !important', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
-                <Typography variant='h4'>professional work</Typography>
+                <Typography variant='h4'>recent professional work</Typography>
                 {workPortfolio.map((item) => (
                     <Container id={`${item.title} Container`} key={item.title} sx={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', backgroundColor: '#fff', margin: '15px 0 !important', padding: '0 !important', borderStyle: 'none', borderRadius: '15px', width: '100%' }}>
                         <Box

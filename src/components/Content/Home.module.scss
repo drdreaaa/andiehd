@@ -11,16 +11,24 @@
     max-width: 350px;
 }
 
+
+
+.toggle {
+    &.Mui-selected {
+        background-color: pink;
+    }
+}
+
 .homeContainer {
+    background-color: #fff;
+    border-radius: 15px;
+    border-style: none;
     margin-top: 15px;
 }
 
 // MOBILE
 @media screen AND (max-width: 479px) {
     .homeContainer {
-        background-color: #fff;
-        border-radius: 15px;
-        border-style: none;
         // margin-top: 0;
         max-width: 353px !important;
         padding: 15px !important;
@@ -44,9 +52,6 @@
 // TABLET
 @media screen AND (min-width: 480px) AND (max-width: 767px) {
     .homeContainer {
-        background-color: #fff;
-        border-radius: 15px;
-        border-style: none;
         // margin-top: 15px;
         // width: 58%;
         width: 85% !important;
@@ -71,9 +76,6 @@
 // DESKTOP
 @media screen AND (min-width: 767px) AND (max-width: 1024px) {
     .homeContainer {
-        background-color: #fff;
-        border-radius: 15px;
-        border-style: none;
         // margin-top: 15px;
         // width: 58%;
         width: 85% !important;
@@ -94,9 +96,6 @@
 // WIDE
 @media screen AND (min-width: 1025px) {
     .homeContainer {
-        background-color: #fff;
-        border-radius: 15px;
-        border-style: none;
         // margin-top: 15px;
         // width: 58%;
         width: 85%;

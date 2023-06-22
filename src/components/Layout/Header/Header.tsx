@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                 textAlign: 'center'
             }}
         >
-            <Typography variant='h3'>AnDieHD</Typography>
+            <Typography variant='h3'>andieHD</Typography>
         </Box>
     )
 }

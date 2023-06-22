@@ -11,13 +11,14 @@
     max-width: 350px;
 }
 
-.contactContainer {
+.aboutContainer {
     margin-top: 15px;
+    max-width: 650px;
 }
 
 // MOBILE
 @media screen AND (max-width: 479px) {
-    .contactContainer {
+    .aboutContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
@@ -29,23 +30,11 @@
         width: 79%;
         margin: 15px;
     }
-    .salutation {
-        max-width: 175px;
-    }
-    .photo {
-        // border-radius: 50%;
-        // border-style: none;
-        height: 117px;
-        width: 117px;
-    }
-    .intro {
-        max-width: 350px;
-    }
 }
 
 // TABLET
 @media screen AND (min-width: 480px) AND (max-width: 767px) {
-    .contactContainer {
+    .aboutContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
@@ -74,7 +63,7 @@
 
 // DESKTOP
 @media screen AND (min-width: 767px) AND (max-width: 1024px) {
-    .contactContainer {
+    .aboutContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
@@ -99,7 +88,7 @@
 
 // WIDE
 @media screen AND (min-width: 1025px) {
-    .contactContainer {
+    .aboutContainer {
         background-color: #fff;
         border-radius: 15px;
         border-style: none;
